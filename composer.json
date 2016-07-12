@@ -14,7 +14,7 @@
             "email": "pistol88@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "Stable",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",

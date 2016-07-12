@@ -1,3 +1,7 @@
+.tree-index {
+    margin: 20px 0;
+}
+
 .categories-tree li {
     opacity: 0.9;
     list-style: none;
@@ -13,9 +17,13 @@
 
 .categories-tree .btn {
     margin: 2px;
-    padding: 3px;
+}
+
+.pistol88-tree-right-col .buttons {
+    margin-right: 5px;
 }
 
 .pistol88-tree-right-col {
     text-align: right;
 }
+
