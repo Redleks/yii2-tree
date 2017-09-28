@@ -1,6 +1,6 @@
 <?php
 
-namespace pistol88\tree\assets;
+namespace redleks\tree\assets;
 
 use yii\web\AssetBundle;
 
