@@ -2,17 +2,27 @@
     margin: 20px 0;
 }
 
+a.pistol88-tree-toggle {
+    color: #333;
+    text-decoration: none
+}
+
+a.pistol88-tree-toggle:hover {
+    color: #000;
+}
+
 .categories-tree li {
     opacity: 0.9;
     list-style: none;
+    margin-bottom: 10px;
     border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+    // border-right: 1px solid #fff;
 }
 
 .categories-tree li:hover {
     opacity: 1;
     border-left: 1px solid #333;
-    border-right: 1px solid #333;
+    // border-right: 1px solid #333;
 }
 
 .categories-tree .btn {

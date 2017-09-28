@@ -6,15 +6,18 @@ use yii;
 class Tree extends \yii\base\Widget
 {
     public $model = null;
-    public $updateUrl = 'category/update';
-    public $viewUrl = 'product/index';
-    public $viewUrlToSearch = true;
+    public $updateUrl = 'cards/update';
+    public $viewUrl = 'cards/view';
+    public $deleteUrl = 'cards/delete';
+    public $viewUrlToSearch = false;
     public $viewUrlModelName = 'ProductSearch';
     public $viewUrlModelField = 'category_id';
     public $orderField = false;
     public $parentField = 'parent_id';
     public $idField = 'id';
+    public $idCardField = 'id_card';
     public $view = 'index';
+    public $currentElementId = 0;
     
     public function init()
     {
@@ -32,7 +35,7 @@ class Tree extends \yii\base\Widget
         } else {
             $list = $model::find()->asArray()->all();
         }
-        $itemsTree = self::buildArray($list, 0, $this->idField, $this->parentField);
+        $itemsTree = self::buildArray($list, $this->currentElementId, $this->idCardField, $this->parentField);
 
        return $this->render($this->view, [
             'categoriesTree' => self::treeBuild($itemsTree),
