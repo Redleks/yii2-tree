@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "pistol88\\tree\\": ""
+            "redleks\\tree\\": ""
         }
     }
 }
